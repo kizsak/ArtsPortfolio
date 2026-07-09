@@ -417,3 +417,60 @@ body[class="comp-media-home.html"] .card {
   font-size: 0.85rem;
   color: #f7d6ff;
 }
+
+.gallery-wrap {
+  width: min(1400px, 94vw);
+  margin: 3rem auto 5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.2rem;
+  align-items: start;
+}
+
+.gallery-card {
+  background: rgba(20, 12, 32, 0.72);
+  border: 1px solid rgba(255, 190, 235, 0.28);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 22px rgba(255, 120, 220, 0.18);
+  backdrop-filter: blur(6px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gallery-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(255, 175, 235, 0.35);
+}
+
+.gallery-thumb {
+  display: block;
+  padding: 0.7rem;
+}
+
+.gallery-thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 560px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.gallery-info {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.gallery-info h3 {
+  margin: 0 0 0.35rem;
+  color: #ffc06d;
+  font-size: 1rem;
+}
+
+.gallery-info .meta {
+  margin: 0;
+  color: #f3d6ff;
+  font-size: 0.82rem;
+}
