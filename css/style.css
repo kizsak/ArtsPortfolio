@@ -375,3 +375,45 @@ body[class="comp-media-home.html"] .card {
     margin-top: 3rem;
   }
 }
+
+
+.gallery-page {
+  width: min(1200px, 92vw);
+  margin: 3rem auto;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.gallery-card {
+  background: rgba(20, 10, 30, 0.72);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(255, 170, 220, 0.25);
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-caption {
+  padding: 1rem;
+}
+
+.gallery-caption h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+  color: #ffc47a;
+}
+
+.gallery-caption p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #f7d6ff;
+}
